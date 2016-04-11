@@ -14,6 +14,7 @@ module Feedjira
       element :description, :as => :summary
       element :"content:encoded", :as => :content
       element :pubDate, :as => :published
+      elements :category, :as => :categories
 
       # If author is not present use author tag on the item
       element :"itunes:author", :as => :itunes_author
