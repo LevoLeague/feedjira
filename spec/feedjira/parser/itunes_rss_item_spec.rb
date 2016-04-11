@@ -11,6 +11,10 @@ describe Feedjira::Parser::ITunesRSSItem do
     expect(@item.title).to eq "Shake Shake Shake Your Spices"
   end
 
+  it "should parse the category" do
+    expect(@item.categories).to eq(["Social Media", "Career Advice"])
+  end
+
   it "should parse the author" do
     expect(@item.itunes_author).to eq "John Doe"
   end
